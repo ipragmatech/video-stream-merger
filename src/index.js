@@ -24,7 +24,7 @@ function VideoStreamMerger (opts) {
   self._canvas = document.createElement('canvas')
   self._canvas.setAttribute('width', self.width)
   self._canvas.setAttribute('height', self.height)
-  self._canvas.setAttribute('style', 'position:fixed; left: 110%; pointer-events: none') // Push off screen
+  self._canvas.setAttribute('style', 'position:fixed; pointer-events: none') // Push off screen
   self._ctx = self._canvas.getContext('2d')
 
   self._streams = []
